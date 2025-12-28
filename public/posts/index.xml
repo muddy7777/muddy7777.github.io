@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on 方的技术博客</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on 方的技术博客</description>
+    <generator>Hugo -- 0.153.3</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 28 Dec 2025 15:07:16 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用hugo构建个人技术博客</title>
+      <link>http://localhost:1313/posts/my-first-blog/</link>
+      <pubDate>Sun, 28 Dec 2025 15:07:16 +0800</pubDate>
+      <guid>http://localhost:1313/posts/my-first-blog/</guid>
+      <description>&lt;p&gt;这篇文章记录我从 0 到 1 用 &lt;strong&gt;Hugo&lt;/strong&gt; 搭建个人技术博客的完整流程：安装、创建站点、选择主题、写文章、本地预览，以及部署到 GitHub Pages。&lt;/p&gt;
+&lt;h2 id=&#34;为什么选择-hugo&#34;&gt;为什么选择 Hugo&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;速度快&lt;/strong&gt;：静态生成，构建和加载都很快。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;写作友好&lt;/strong&gt;：Markdown 写文章，目录清晰。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;生态成熟&lt;/strong&gt;：主题丰富，搜索、标签、归档等能力现成。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;易部署&lt;/strong&gt;：生成的是纯静态文件，GitHub Pages / Cloudflare Pages / 任意静态托管都能用。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;准备工作&#34;&gt;准备工作&lt;/h2&gt;
+&lt;p&gt;你需要：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Git（用于拉取主题、部署）&lt;/li&gt;
+&lt;li&gt;Hugo（建议安装 Extended 版本，主题常用到 SCSS）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;安装-hugowindows&#34;&gt;安装 Hugo（Windows）&lt;/h3&gt;
+&lt;p&gt;如果你使用 Scoop：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;scoop install hugo-extended
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo version
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果你使用 Chocolatey：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;choco install hugo-extended -y
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo version
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;安装完成后，确认能看到版本号输出即可。&lt;/p&gt;
+&lt;h2 id=&#34;创建站点&#34;&gt;创建站点&lt;/h2&gt;
+&lt;p&gt;在任意目录执行：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo new site my-tech-blog
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd my-tech-blog
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Hugo 站点常见目录说明：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;content/&lt;/code&gt;：文章内容（Markdown）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;themes/&lt;/code&gt;：主题&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;static/&lt;/code&gt;：静态资源（图片、favicon 等），会原样复制到站点根目录&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;assets/&lt;/code&gt;：需要 Hugo 管道处理的资源（如 SCSS）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;layouts/&lt;/code&gt;：自定义模板（覆盖/扩展主题）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;安装与启用主题papermod-示例&#34;&gt;安装与启用主题（PaperMod 示例）&lt;/h2&gt;
+&lt;p&gt;PaperMod 是一个简洁、性能优秀、功能齐全的 Hugo 主题。常见安装方式有两种：Git 子模块或直接拷贝主题目录。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

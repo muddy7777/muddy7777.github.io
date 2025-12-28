@@ -1,0 +1,16 @@
+/* Minimal spacing override for PaperMod Home-Info section.
+   Loaded automatically via themes/hugo-PaperMod/layouts/partials/head.html
+   (resources.Match "css/extended/*.css"). */
+
+.first-entry.home-info {
+    /* Default is min-height: 320px; keep it compact. */
+    min-height: 100px;
+
+    /* Default is: margin: var(--gap) 0 calc(var(--gap) * 2) 0; */
+    margin: calc(var(--gap) * 0.75) 0 var(--gap) 0;
+}
+
+.first-entry.home-info .entry-content {
+    /* Default is 14px 0; slightly tighter. */
+    margin: 10px 0;
+}

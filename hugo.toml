@@ -1,0 +1,28 @@
+baseURL = 'https://muddy7777.github.io/'
+languageCode = 'zh-cn'
+title = '方的技术博客'
+theme = "hugo-PaperMod"
+
+[params]
+	description = "记录技术与思考"
+	defaultTheme = "auto"     # auto / light / dark
+	ShowReadingTime = true
+	ShowShareButtons = true
+	ShowCodeCopyButtons = true
+	ShowBreadCrumbs = true
+	ShowPostNavLinks = true
+	ShowToc = true
+	TocOpen = true
+
+[params.homeInfoParams]
+	Title = "你好，我是方"
+	Content = """这里记录技术与思考，主要关注：后端 / 生图 / 工程"""
+
+[[menu.main]]
+	name = "归档"
+	url = "archives/"
+	weight = 10
+[[menu.main]]
+	name = "标签"
+	url = "tags/"
+	weight = 20
