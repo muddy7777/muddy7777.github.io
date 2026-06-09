@@ -23,7 +23,35 @@
       "description": "低噪声 Markdown 文件入口"
     }
   ],
+  "sections": [
+    {
+      "title": "总览",
+      "url": "https://muddy7777.github.io/"
+    },
+    {
+      "title": "文章",
+      "url": "https://muddy7777.github.io/articles/"
+    },
+    {
+      "title": "Prompts",
+      "url": "https://muddy7777.github.io/prompts/"
+    },
+    {
+      "title": "Skill",
+      "url": "https://muddy7777.github.io/skills/"
+    },
+    {
+      "title": "MCP",
+      "url": "https://muddy7777.github.io/mcp/"
+    }
+  ],
   "pages": [
+    {
+      "title": "文章",
+      "url": "https://muddy7777.github.io/articles/",
+      "type": "section",
+      "tags": ["articles", "agent", "workflow"]
+    },
     {
       "title": "Agent 入口",
       "url": "https://muddy7777.github.io/agent/",
@@ -68,4 +96,3 @@
     }
   ]
 }
-

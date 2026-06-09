@@ -9,12 +9,11 @@ description: 面向个人复盘和 agent 读取的结构化知识库。
 
 | 入口 | 用途 |
 | --- | --- |
-| [Agent 入口](/agent/) | 给 agent 的读取顺序、任务路由和站点使用原则 |
-| [Skills](/skills/) | 常用 skill 的触发场景、输入输出和验证方式 |
-| [MCP](/mcp/) | MCP server、工具能力、权限边界和安全注意事项 |
+| [总览](/) | 当前知识库的目标、入口和维护原则 |
+| [文章](/articles/) | Agent 使用、上下文组织、部署维护和复盘文章 |
 | [Prompts](/prompts/) | 可复用 prompt 模板、变量和验收标准 |
-| [Guides](/guides/) | 如何维护、部署、读取和复盘这套知识库 |
-| [Cases](/cases/) | 真实 agent 任务记录和可复用经验 |
+| [Skill](/skills/) | 常用 skill 的触发场景、输入输出和验证方式 |
+| [MCP](/mcp/) | MCP server、工具能力、权限边界和安全注意事项 |
 
 ## Agent 可读入口
 
@@ -45,4 +44,3 @@ https://muddy7777.github.io/llms-full.txt
 - 每个页面都尽量写清楚适用场景、不适用场景、输入、输出和验证方式。
 - Prompt 不追求长，追求任务边界清晰。
 - 涉及密钥、私有路径、账号、token 的内容不放公开页面。
-

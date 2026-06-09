@@ -28,25 +28,14 @@ export default defineConfig({
       sidebar: [
         { label: '总览', link: '/' },
         {
-          label: 'Agent 入口',
+          label: '文章',
           items: [
+            { slug: 'articles' },
             { slug: 'agent' },
             { slug: 'agent/context-packs' },
-          ],
-        },
-        {
-          label: 'Skills',
-          items: [
-            { slug: 'skills' },
-            { slug: 'skills/codex-skills' },
-            { slug: 'skills/skill-card-template' },
-          ],
-        },
-        {
-          label: 'MCP',
-          items: [
-            { slug: 'mcp' },
-            { slug: 'mcp/mcp-server-card-template' },
+            { slug: 'guides/agent-reading-protocol' },
+            { slug: 'guides/github-pages-astro-workflow' },
+            { slug: 'cases/agent-run-log-template' },
           ],
         },
         {
@@ -59,27 +48,18 @@ export default defineConfig({
           ],
         },
         {
-          label: 'Guides',
+          label: 'Skill',
           items: [
-            { slug: 'guides' },
-            { slug: 'guides/agent-reading-protocol' },
-            { slug: 'guides/github-pages-astro-workflow' },
+            { slug: 'skills' },
+            { slug: 'skills/codex-skills' },
+            { slug: 'skills/skill-card-template' },
           ],
         },
         {
-          label: 'Cases',
+          label: 'MCP',
           items: [
-            { slug: 'cases' },
-            { slug: 'cases/agent-run-log-template' },
-          ],
-        },
-        {
-          label: 'Agent Raw',
-          items: [
-            { label: 'llms.txt', link: '/llms.txt' },
-            { label: 'llms-full.txt', link: '/llms-full.txt' },
-            { label: 'data/index.json', link: '/data/index.json' },
-            { label: 'raw/README.md', link: '/raw/README.md' },
+            { slug: 'mcp' },
+            { slug: 'mcp/mcp-server-card-template' },
           ],
         },
       ],
