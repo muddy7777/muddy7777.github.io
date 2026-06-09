@@ -1,0 +1,47 @@
+# 方的 LLM 与 Agent 知识库
+
+> 这是一个面向个人复盘和 agent 读取的知识库，记录 LLM、Agent、Skill、MCP、Prompt、教程和真实案例。Agent 应先读取本文件，再按任务选择相关页面。
+
+本站内容主要服务三类任务：选择合适的 agent 工作流、复用稳定 prompt、让 agent 获取个人偏好的上下文。不要把这里的模板视为固定命令，应结合当前任务和用户输入调整。
+
+## Core
+
+- [总览](https://muddy7777.github.io/): 知识库首页和核心入口。
+- [Agent 入口](https://muddy7777.github.io/agent/): 给 agent 的读取顺序、任务路由和站点使用原则。
+- [上下文包设计](https://muddy7777.github.io/agent/context-packs/): 如何把分散笔记整理成 agent 可直接使用的任务上下文。
+
+## Skills
+
+- [Skills 索引](https://muddy7777.github.io/skills/): 常用 skill 的记录规范和使用原则。
+- [Codex 常用 Skills 清单](https://muddy7777.github.io/skills/codex-skills/): 个人使用 Codex 时常复用的 skill 类型。
+- [Skill 卡片模板](https://muddy7777.github.io/skills/skill-card-template/): 新增 skill 笔记时可复制的结构。
+
+## MCP
+
+- [MCP 索引](https://muddy7777.github.io/mcp/): MCP server、工具能力、权限和安全边界的记录方式。
+- [MCP Server 卡片模板](https://muddy7777.github.io/mcp/mcp-server-card-template/): 记录一个 MCP server 时可复制的结构。
+
+## Prompts
+
+- [Prompts 索引](https://muddy7777.github.io/prompts/): 任务说明、变量、输出格式和验收标准。
+- [Agent 任务说明 Prompt](https://muddy7777.github.io/prompts/agent-task-brief/): 发起复杂 agent 任务时使用的通用 brief。
+- [代码审查 Prompt](https://muddy7777.github.io/prompts/code-review/): 让 agent 按代码审查姿态检查风险。
+- [研究任务 Prompt](https://muddy7777.github.io/prompts/research-brief/): 用于文献检索、技术调研和论文相关任务。
+
+## Guides
+
+- [Guides 索引](https://muddy7777.github.io/guides/): 面向自己和 agent 的使用指南。
+- [让 Agent 读取本站的协议](https://muddy7777.github.io/guides/agent-reading-protocol/): 把本站作为外部上下文交给 agent 的推荐方式。
+- [GitHub Pages 与 Astro 更新流程](https://muddy7777.github.io/guides/github-pages-astro-workflow/): 当前仓库的写作、构建和发布流程。
+
+## Cases
+
+- [Cases 索引](https://muddy7777.github.io/cases/): Agent 使用案例与复盘。
+- [Agent 运行记录模板](https://muddy7777.github.io/cases/agent-run-log-template/): 记录一次 agent 任务的输入、过程、输出和复盘。
+
+## Machine-readable
+
+- [完整核心上下文](https://muddy7777.github.io/llms-full.txt): 将核心页面内容合并成一份 Markdown 文本。
+- [机器可读索引 JSON](https://muddy7777.github.io/data/index.json): 栏目、页面、类型和标签索引。
+- [Raw Markdown 目录](https://muddy7777.github.io/raw/README.md): 少样式、低噪声的 Markdown 文件入口。
+

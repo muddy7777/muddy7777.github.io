@@ -1,0 +1,71 @@
+{
+  "site": {
+    "name": "方的 LLM 与 Agent 知识库",
+    "url": "https://muddy7777.github.io/",
+    "framework": "Astro Starlight",
+    "updated": "2026-06-09",
+    "description": "沉淀个人使用 LLM、Agent、Skill、MCP 和 Prompt 的方法论与实践"
+  },
+  "entrypoints": [
+    {
+      "type": "llms",
+      "url": "https://muddy7777.github.io/llms.txt",
+      "description": "Agent 优先读取的站点索引"
+    },
+    {
+      "type": "full-context",
+      "url": "https://muddy7777.github.io/llms-full.txt",
+      "description": "核心内容合并版"
+    },
+    {
+      "type": "raw",
+      "url": "https://muddy7777.github.io/raw/README.md",
+      "description": "低噪声 Markdown 文件入口"
+    }
+  ],
+  "pages": [
+    {
+      "title": "Agent 入口",
+      "url": "https://muddy7777.github.io/agent/",
+      "type": "agent",
+      "tags": ["agent", "context", "llms-txt"]
+    },
+    {
+      "title": "上下文包设计",
+      "url": "https://muddy7777.github.io/agent/context-packs/",
+      "type": "agent",
+      "tags": ["agent", "context", "workflow"]
+    },
+    {
+      "title": "Codex 常用 Skills 清单",
+      "url": "https://muddy7777.github.io/skills/codex-skills/",
+      "type": "skill",
+      "tags": ["codex", "skills", "workflow"]
+    },
+    {
+      "title": "MCP Server 卡片模板",
+      "url": "https://muddy7777.github.io/mcp/mcp-server-card-template/",
+      "type": "template",
+      "tags": ["mcp", "template"]
+    },
+    {
+      "title": "Agent 任务说明 Prompt",
+      "url": "https://muddy7777.github.io/prompts/agent-task-brief/",
+      "type": "prompt",
+      "tags": ["agent", "prompt", "template"]
+    },
+    {
+      "title": "代码审查 Prompt",
+      "url": "https://muddy7777.github.io/prompts/code-review/",
+      "type": "prompt",
+      "tags": ["code-review", "prompt", "coding"]
+    },
+    {
+      "title": "让 Agent 读取本站的协议",
+      "url": "https://muddy7777.github.io/guides/agent-reading-protocol/",
+      "type": "guide",
+      "tags": ["agent", "guide", "llms-txt"]
+    }
+  ]
+}
+

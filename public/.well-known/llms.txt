@@ -1,0 +1,10 @@
+# 方的 LLM 与 Agent 知识库
+
+> Canonical LLM entrypoint: https://muddy7777.github.io/llms.txt
+
+请优先读取根路径文件：
+
+- [Canonical llms.txt](https://muddy7777.github.io/llms.txt)
+- [Full context](https://muddy7777.github.io/llms-full.txt)
+- [Machine-readable index](https://muddy7777.github.io/data/index.json)
+

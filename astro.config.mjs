@@ -1,0 +1,89 @@
+import { defineConfig } from 'astro/config';
+import starlight from '@astrojs/starlight';
+import sitemap from '@astrojs/sitemap';
+
+export default defineConfig({
+  site: 'https://muddy7777.github.io',
+  integrations: [
+    starlight({
+      title: '方的 LLM 与 Agent 知识库',
+      description: '沉淀个人使用 LLM、Agent、Skill、MCP 和 Prompt 的方法论与实践。',
+      locales: {
+        root: {
+          label: '中文',
+          lang: 'zh-CN',
+        },
+      },
+      social: [
+        {
+          icon: 'github',
+          label: 'GitHub',
+          href: 'https://github.com/muddy7777/muddy7777.github.io',
+        },
+      ],
+      customCss: ['./src/styles/custom.css'],
+      editLink: {
+        baseUrl: 'https://github.com/muddy7777/muddy7777.github.io/edit/main/',
+      },
+      sidebar: [
+        { label: '总览', link: '/' },
+        {
+          label: 'Agent 入口',
+          items: [
+            { slug: 'agent' },
+            { slug: 'agent/context-packs' },
+          ],
+        },
+        {
+          label: 'Skills',
+          items: [
+            { slug: 'skills' },
+            { slug: 'skills/codex-skills' },
+            { slug: 'skills/skill-card-template' },
+          ],
+        },
+        {
+          label: 'MCP',
+          items: [
+            { slug: 'mcp' },
+            { slug: 'mcp/mcp-server-card-template' },
+          ],
+        },
+        {
+          label: 'Prompts',
+          items: [
+            { slug: 'prompts' },
+            { slug: 'prompts/agent-task-brief' },
+            { slug: 'prompts/code-review' },
+            { slug: 'prompts/research-brief' },
+          ],
+        },
+        {
+          label: 'Guides',
+          items: [
+            { slug: 'guides' },
+            { slug: 'guides/agent-reading-protocol' },
+            { slug: 'guides/github-pages-astro-workflow' },
+          ],
+        },
+        {
+          label: 'Cases',
+          items: [
+            { slug: 'cases' },
+            { slug: 'cases/agent-run-log-template' },
+          ],
+        },
+        {
+          label: 'Agent Raw',
+          items: [
+            { label: 'llms.txt', link: '/llms.txt' },
+            { label: 'llms-full.txt', link: '/llms-full.txt' },
+            { label: 'data/index.json', link: '/data/index.json' },
+            { label: 'raw/README.md', link: '/raw/README.md' },
+          ],
+        },
+      ],
+    }),
+    sitemap(),
+  ],
+});
